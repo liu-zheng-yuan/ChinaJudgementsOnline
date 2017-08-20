@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>搜索结果</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #header{
+            background-color:black ;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            font-size: 70%;
+        }
+    </style>
+</head>
+<body >
+    <div id="header">
+    <h1 >中国裁判文书网文书下载</h1>
+    </div>
+    <b>搜索结果共{{totalnumber}}条，当前第{{currentPage}}页，此页案件共有{{count}}条</b>
+    <div align="center"><a href="/download"><button>下载所有案件</button></a></div>
+    {% if caseList %}
+        <ul>
+        {% for case in caseList %}
+            <li>
+            <p>第{{loop.index + 20*(currentPage-1)}}篇文书</p>
+            <p>{{case["wsnr"][:250]}}<p/>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% if count < 20 %}
+    <p>以上就是全部搜索结果</p>
+    {% endif %}
+    <div align="center">
+        {{ buttonHtmlStr|safe }}
+    </div>
+</body>
+</html>

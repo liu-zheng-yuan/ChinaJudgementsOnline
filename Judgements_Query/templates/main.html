@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>中国裁判文书网爬虫</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #header{
+            background-color:black ;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            font-size: 70%;
+        }
+        #footer{
+            border-top: 0 solid #fff;
+            clear: both;
+            line-height: 24px;
+            margin: 0 0 0 12px;
+            padding-top: 4px;
+            width: 1210px;
+            text-align: center;
+            color:#999;
+        }
+    </style>
+</head>
+<body >
+<div id="header">
+<h1 >中国裁判文书网文书下载</h1>
+</div>
+<form action="/result" method="post" target="_blank" >
+    <p></p>
+    <table border="0" align="center">
+        <caption ><span style="font-size:30px;color: rgba(9, 9, 9, 0.53)">请输入搜索条件</span></caption>
+        <tr>
+            <th>案件名称</th>
+            <th>案号</th>
+            <th>关键词</th>
+            <th>法院层级</th>
+            <th>法院地域</th>
+
+        </tr>
+        <tr>
+            <td><input type="text" name="ajmc" ></td>
+            <td><input type="text" name="ah" ></td>
+            <td><input type="text" name="gjc" ></td>
+            <td><input type="text" name="fycj" ></td>
+            <td><input type="text" name="fydy" ></td>
+        </tr>
+        <tr>
+            <th>审判程序</th>
+            <th>审判日期（起始）</th>
+            <th>审判日期（结束）</th>
+            <th>发布日期（起始）</th>
+            <th>发布日期（结束）</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="spcx" ></td>
+            <td><input type="text" name="sprqS" ></td>
+            <td><input type="text" name="sprqE" ></td>
+            <td><input type="text" name="fbrqS" ></td>
+            <td><input type="text" name="fbrqE" ></td>
+        </tr>
+    </table>
+    <div align="center">
+        <p><button type="submit" style="font-size: 125%">检索</button></p>
+    </div>
+    </form>
+    <div id="footer" align="center">
+        <P>*输入的日期格式应为YYYY-MM-DD,如2017-01-01</P>
+    </div>
+</body>
+</html>

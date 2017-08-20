@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/China_Judgements_Online_Spider.iml" filepath="$PROJECT_DIR$/.idea/China_Judgements_Online_Spider.iml" />
+      <module fileurl="file://G:/中国裁判文书网爬虫/Python源码/文书爬虫Python版/.idea/文书爬虫Python版.iml" filepath="G:/中国裁判文书网爬虫/Python源码/文书爬虫Python版/.idea/文书爬虫Python版.iml" />
+    </modules>
+  </component>
+</project>
